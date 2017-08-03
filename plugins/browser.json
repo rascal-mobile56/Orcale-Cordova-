@@ -1,0 +1,49 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.essentialpathways.transformationcards"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.essentialpathways.transformationcards"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "com.essentialpathways.transformationcards"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.essentialpathways.transformationcards"
+        },
+        "cordova-plugin-screen-orientation": {
+            "PACKAGE_NAME": "com.essentialpathways.transformationcards"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.essentialpathways.transformationcards"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.essentialpathways.transformationcards"
+        },
+        "cordova-plugin-x-socialsharing": {
+            "PACKAGE_NAME": "com.essentialpathways.transformationcards"
+        },
+        "cordova-plugin-crosswalk-webview": {
+            "PACKAGE_NAME": "com.essentialpathways.transformationcards"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.essentialpathways.transformationcards"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.essentialpathways.transformationcards"
+        },
+        "es6-promise-plugin": {
+            "PACKAGE_NAME": "com.essentialpathways.transformationcards"
+        }
+    }
+}

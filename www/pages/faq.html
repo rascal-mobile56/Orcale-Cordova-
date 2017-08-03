@@ -1,0 +1,70 @@
+﻿<div id="pageFaq" class="page glass">
+    <div id="header">
+        Inner Oracle Cards FAQ
+    </div>
+    <div id="content" class="with-header with-footer">
+        <div class="c-w1">
+            <div class="group paragraph">
+                <h2>What are Inner Oracle Cards?</h2>
+                <p>
+                    Inner Oracle Cards are a tool to help us remove our limiting beliefs 
+                    and retained emotions that restrict our life 
+                    and block the experience of our true Self.
+                </p>
+            </div>
+            <div class="group paragraph">
+                <h2>Who created them?</h2>
+                <p>
+                    <img src="themes/images/res/dr-rick-moss_big.png" alt="dr rick moss"/>
+                    Rick Moss, Ph.D., 
+                    who for 25 years has used an intuitive ability 
+                    to help people release limiting beliefs, 
+                    retained emotions and old patterns.
+                </p>
+            </div>
+            <div class="group paragraph">
+                <h2>How can I take this work deeper?</h2>
+                <p>There are many free clearings online at 
+                <a id="visit" class="visit">www.EssentialPathways.com.</a>
+                <span>Visit the </span>
+                <a id="visitStore" class="visit">Store</a>
+                <span>for guided clearing cds and mp3s. Rick also offers </span>
+                <a id="visitSprit" class="visit">personal phone sessions.</a>
+                </p>
+            </div>
+
+            <!--<a id="visit" class="visit">www.EssentialPathways.com</a>-->
+            <!--<a id="visitStore" class="visit">www.essentialpathways.com/store </a>-->
+            <!--<a id="visitSprit" class="visit">www.essentialpathways.com/spiritual-counseling</a>-->
+
+        </div>
+    </div>
+    <div id="footer">
+        <div id="btnBack" class="btn btn-left90 left">Back Home</div>
+        <div id="btnVisit" class="btn btn180 right">Visit EssentialPathways.com</div>
+    </div>
+</div>
+<script language="javascript" type="text/javascript">
+    (function () {
+        nova.touch.bindClick('#btnBack', function () {
+            app.goBack();
+        });
+        nova.touch.bindClick('#btnVisit', function () {
+            var ref = window.open(app.game.settings.urlHomePage, '_blank', 'location=yes');
+        });
+        nova.touch.bindClick('#visit', function () {
+            var ref = window.open(app.game.settings.urlHomePage, '_blank', 'location=yes');
+            console.log(app.game.settings.urlHomePage);
+        });
+        nova.touch.bindClick('#visitStore', function () {
+            var ref = window.open('http://www.essentialpathways.com/store', '_blank', 'location=yes');
+        });
+        nova.touch.bindClick('#visitSprit', function () {
+            var ref = window.open('http://www.essentialpathways.com/spiritual-counseling', '_blank', 'location=yes');
+        });
+        app.setContentHeight();
+        var scroller = new nova.Scroller('#content');
+        scroller.init();
+        app.game.setStartedFromHome();
+    })();
+</script>

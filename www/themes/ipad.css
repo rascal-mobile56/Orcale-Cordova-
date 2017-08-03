@@ -1,0 +1,9 @@
+﻿#header,
+#footer,
+#content {
+    zoom: 1.5;
+    /*zoom: 2;*/
+}
+#content.with-header {
+    top: 44px;
+}

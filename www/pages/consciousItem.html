@@ -1,0 +1,32 @@
+﻿<div id="pageConsciousItem" class="page">
+    <div id="imgCardWrap">
+        <img id="imgCard" />
+        <img id="imgOverlay" src="themes/images/bg/card-shadow.png"/>
+    </div>
+    <div id="content">
+        <div id="consciousText">
+            <div class="item-w1">
+                <div class="title">
+                    <img src="themes/images/names/concious.png" />
+                </div>
+                <div class="sub-title">
+                    Read the <span class="total-Items">4</span> cards about <span id="issueCardName"></span> and choose the one that feels the most relevant to you.
+                </div>
+                <div class="pager">
+                    Card <span id="currentItem">1</span>
+                    Of <span class="total-Items">4</span>
+                </div>
+                <div id="itemText">
+
+                </div>
+            </div>
+            <div class="buttons">
+                <div id="btnNextCard"></div>
+                <div id="btnChooseThisCard"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script language="javascript" type="text/javascript">
+    app.pages.consciousItem.init();
+</script>

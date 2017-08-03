@@ -1,0 +1,717 @@
+﻿@font-face {
+    font-family: 'GillSans';
+    src: url('fonts/GIL_____.eot');
+    src: url('fonts/GIL_____.eot?#iefix') format('embedded-opentype'),
+         url('fonts/GIL_____.otf') format('opentype'),
+         url('fonts/GIL_____.ttf') format('truetype'),
+         url('fonts/GIL_____.svg#GillSans') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Trebuchet';
+    src: url('fonts/trebuc.eot');
+    src: url('fonts/trebuc.eot?#iefix') format('embedded-opentype'),
+         url('fonts/trebuc.otf') format('opentype'),
+         url('fonts/trebuc.ttf') format('truetype'),
+         url('fonts/trebuc.svg#Trebuchet') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'KaushanScript-Regular';
+    src: url('fonts/KaushanScript-Regular.eot');
+    src: url('fonts/KaushanScript-Regular.eot?#iefix') format('embedded-opentype'),
+         url('fonts/KaushanScript-Regular.otf') format('opentype'),
+         url('fonts/KaushanScript-Regular.ttf') format('truetype'),
+         url('fonts/KaushanScript-Regular.svg#KaushanScript-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.font-gilsans {
+    font-family: "GillSans";
+}
+.font-trebuchet {
+    font-family: "Trebuchet";
+}
+.font-kaushan {
+    font-family: "KaushanScript-Regular";
+}
+
+#body {
+    background: url(images/bg/home.jpg) no-repeat;
+    background-size: 100% 100%;
+    /*font-family: "GillSans","Arial";*/
+    font-family: "trebuchet Ms";
+    width: 100vw;
+}
+.dock-bottom {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+.glass {
+    background-color: rgba(255, 255, 255, 0.55);
+}
+.group.paragraph {
+    margin-bottom: 20px;
+}
+.visit{
+    margin: 5px 0;
+    display: inline-block;
+    color: blue;
+    text-decoration: underline;
+}
+h2 {
+    margin: 0 0 5px 0;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+p {
+    margin: 0px;
+    line-height: 20px;
+}
+p > img {
+    float: left;
+    margin: 0 12px 12px 0;
+}
+table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+}
+th {
+    border-bottom: 1px solid #000000;
+    text-align: left;
+    text-transform: uppercase;
+}
+td.cell-date {
+    font-size: 12px;
+}
+td.cell-issue {
+    font-weight: bold;
+}
+td.cell-action {
+    padding: 6px 0;
+}
+.btn-purple {
+    /*font-family: "GillSans";*/
+    font-family: "Arial", HelveticaNeue, Helvetica, Arial, sans-serif;
+    /*font-weight: normal;*/
+    /*font-weight: bold;*/
+}
+
+#pageHome #footer {
+    background: url(images/bg/elem/bg-essential-pathways.png) repeat-x;
+    height: 45px;
+}
+#pageHome #footer img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+#pageHome #main img {
+    display: block;
+    margin: 0 auto;
+}
+#pageHome .btn-purple {
+    margin: 8px auto;
+}
+
+/* cards */
+#chooseCardsText > div {
+    display: none;
+}
+#pageCrads.step1 #step1Text,
+#pageCrads.step2 #step2Text,
+#pageCrads.step3 #step3Text,
+#pageCrads.step4 #step4Text {
+    display: block;
+}
+#pageCrads #footer {
+    display: none;
+}
+#pageCrads .w1 {
+    min-height: 510px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 6vh;
+}
+#pageCrads .deck-wrap {
+    overflow: hidden;
+    width: 100%;
+}
+#pageCrads #deck {
+    margin: 0 auto;
+    height: 180px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: block;
+}
+#pageCrads.step1 #deck {
+    background-image: url(images/cards/deck-issue.png);
+}
+#pageCrads.step2 #deck {
+    background-image: url(images/cards/deck-negative.png);
+}
+#pageCrads.step3 #deck {
+    background-image: url(images/cards/deck-conscious.png);
+}
+#pageCrads.step4 #deck {
+    background-image: url(images/cards/deck-unconscious.png);
+}
+#pageCrads.step5 #deck {
+    display: none;
+}
+
+ul#cards {
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 10px 0 0;
+    width: 287px;
+}
+ul#cards > li {
+    list-style: none;
+    float: left;
+}
+li#cardIssue,
+li#cardConscious {
+    margin-right: 15px;
+}
+li#cardIssue,
+li#cardNegative {
+    margin-bottom: 10px;
+}
+ul#cards label {
+    display: none;
+    font-size: 8px;
+    height: 10px;
+    line-height: 10px;
+    text-transform: uppercase;
+    font-family: "Arial";
+}
+ul#cards div.card-name {
+    height: 10px;
+}
+ul#cards .card-text {
+    width: 130px;
+    height: 100px;
+    overflow: hidden;
+    border: 1px solid transparent;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: "Arial";
+    padding: 0 2px;
+}
+li#cardIssue .card-text {
+    background: url(images/cards/card-issue.png) no-repeat;
+    font-size: 12px;
+    font-weight: bold;
+    background-size: cover;
+}
+li#cardNegative  .card-text{
+    background: url(images/cards/card-negative.png) no-repeat;
+    font-size: 12px;
+    font-weight: bold;
+    background-size: cover;
+}
+li#cardConscious .card-text{
+    background: url(images/cards/card-conscious-affirmation.png) no-repeat;
+    font-size: 11px;
+    background-size: cover;
+}
+li#cardUnconscious .card-text{
+    background: url(images/cards/card-unconscious-affirmation.png) no-repeat;
+    font-size: 11px;
+    background-size: cover;
+}
+
+.step2 li#cardIssue .card-text,
+.step3 li#cardIssue .card-text,
+.step4 li#cardIssue .card-text,
+.step5 li#cardIssue .card-text {
+    background: #ffffff;
+    border: 1px solid #666666;
+}
+.step2 li#cardIssue label,
+.step3 li#cardIssue label,
+.step4 li#cardIssue label,
+.step5 li#cardIssue label {
+    display: block;
+}
+.step3 li#cardNegative .card-text,
+.step4 li#cardNegative .card-text,
+.step5 li#cardNegative .card-text {
+    background: #cdcdff;
+    border: 1px solid #666666;
+}
+.step3 li#cardNegative label,
+.step4 li#cardNegative label,
+.step5 li#cardNegative label {
+    display: block;
+}
+.step4 li#cardConscious .card-text,
+.step5 li#cardConscious .card-text {
+    background: #fcb984;
+    border: 1px solid #666666;
+}
+.step4 li#cardConscious label,
+.step5 li#cardConscious label {
+    display: block;
+}
+.step5 li#cardUnconscious .card-text {
+    background: #ffffcd;
+    border: 1px solid #666666;
+}
+.step5 li#cardUnconscious label {
+    display: block;
+}
+#chooseCardsText {
+    margin: 10px auto 10px auto;
+    text-align: center;
+}
+#chooseCardsText h3 {
+    margin: 0;
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+#chooseCardsText p {
+    width: 280px;
+    margin: 0 auto;
+}
+/* pageItem */
+#pageItem {
+    color: #ffffff;
+    text-align: center;
+    background: #000000;
+}
+#cardItem {
+    margin-top: 10px;
+}
+#cardTitle {
+    font-size: 20px;
+    margin-top: 4vh;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    font-family: "KaushanScript-Regular";
+}
+#cardBottom {
+    bottom: 0;
+    padding-bottom: 4vh;
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+}
+#cardItem {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -ios-border-radius: 15px;
+    -o-border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+#cardText {
+    font-size: 28px;
+    line-height: 32px;
+    font-family: "KaushanScript-Regular";
+    font-weight: normal;
+}
+#tapToContinue {
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+#cardItem > div{
+    background: url(images/bg/card-shadow.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    box-shadow: 0 0 10px 10px #000000 inset;
+    -webkit-box-shadow: 0 0 10px 10px #000000 inset;
+    -ios-box-shadow: 0 0 10px 10px #000000 inset;
+    -o-box-shadow: 0 0 10px 10px #000000 inset;
+}
+#cardItem > img {
+    width: 100%;
+}
+#step5Content {
+    display: none;
+}
+.step5 #step5Content {
+    display: block;
+}
+.issue-addiction {
+    background-image: url(images/items/issues/addiction.jpg);
+}
+.issue-authoritygod {
+    background-image: url(images/items/issues/authoritygod.jpg);
+}
+.issue-bodyhealth {
+    background-image: url(images/items/issues/bodyhealth.jpg);
+}
+.issue-commitmentpurpose {
+    background-image: url(images/items/issues/CommitmentPurpose.jpg);
+}
+.issue-communication {
+    background-image: url(images/items/issues/Communication.jpg);
+}
+.issue-creatorship {
+    background-image: url(images/items/issues/Creatorship.jpg);
+}
+.issue-death {
+    background-image: url(images/items/issues/death.jpg);
+}
+.issue-failure {
+    background-image: url(images/items/issues/failure.jpg);
+}
+.issue-forgiveness {
+    background-image: url(images/items/issues/forgiveness.jpg);
+}
+.issue-intimacy {
+    background-image: url(images/items/issues/intimacy.jpg);
+}
+.issue-intuition {
+    background-image: url(images/items/issues/intuition.jpg);
+}
+.issue-judgement {
+    background-image: url(images/items/issues/judgement.jpg);
+}
+.issue-love {
+    background-image: url(images/items/issues/love.jpg);
+}
+.issue-moneysuccess {
+    background-image: url(images/items/issues/moneysuccess.jpg);
+}
+.issue-painfeelings {
+    background-image: url(images/items/issues/PainFeelings.jpg);
+}
+.issue-pleasurehappiness {
+    background-image: url(images/items/issues/PleasureHappiness.jpg);
+}
+.issue-power {
+    background-image: url(images/items/issues/power.jpg);
+}
+.issue-relationship {
+    background-image: url(images/items/issues/relationship.jpg);
+}
+.issue-responsibility {
+    background-image: url(images/items/issues/responsibility.jpg);
+}
+.issue-surrender {
+    background-image: url(images/items/issues/surrender.jpg);
+}
+
+.negative-addiction {
+    background-image: url(images/items/negative/addiction.jpg);
+}
+.negative-anger {
+    background-image: url(images/items/negative/anger.jpg);
+}
+.negative-attachment {
+    background-image: url(images/items/negative/attachment.jpg);
+}
+.negative-avoidance {
+    background-image: url(images/items/negative/avoidance.jpg);
+}
+.negative-blame {
+    background-image: url(images/items/negative/blame.jpg);
+}
+.negative-choosinguntruth {
+    background-image: url(images/items/negative/choosinguntruth.jpg);
+}
+.negative-control {
+    background-image: url(images/items/negative/control.jpg);
+}
+.negative-criticizing {
+    background-image: url(images/items/negative/criticizing.jpg);
+}
+.negative-egoaggrandizement {
+    background-image: url(images/items/negative/egoaggrandizement.jpg);
+}
+.negative-fear {
+    background-image: url(images/items/negative/fear.jpg);
+}
+.negative-guilt {
+    background-image: url(images/items/negative/guilt.jpg);
+}
+.negative-insensitivity {
+    background-image: url(images/items/negative/insensitivity.jpg);
+}
+.negative-narcissism {
+    background-image: url(images/items/negative/narcissism.jpg);
+}
+.negative-outofbalance {
+    background-image: url(images/items/negative/outofbalance.jpg);
+}
+.negative-regression {
+    background-image: url(images/items/negative/regression.jpg);
+}
+.negative-resistance {
+    background-image: url(images/items/negative/resistance.jpg);
+}
+.negative-selfdoubt {
+    background-image: url(images/items/negative/selfdoubt.jpg);
+}
+.negative-shutdown {
+    background-image: url(images/items/negative/shutdown.jpg);
+}
+.negative-withdrawal {
+    background-image: url(images/items/negative/withdrawl.jpg);
+}
+
+/* ---  */
+.item-w1 {
+    padding: 10px 8%;
+    text-align: center;
+}
+#pageConsciousItem {
+    background: none repeat scroll 0 0 #000000;
+}
+#pageConsciousItem .title, #pageContinue .title {
+    color: #FFB370;
+    font-size: 26px;
+    line-height: 50px;
+    text-align: center;
+    font-family: "KaushanScript-Regular";
+    margin-top: 3vh;
+}
+
+#pageContinue {
+    background: none repeat scroll 0 0 #000000;
+}
+#consciousText .itemText {
+    font-size: 20px;
+}
+.itemText {
+    color: #FFFFFF;
+    padding: 3vh 0;
+    font-size: 18px;
+    font-family: "Trebuchet MS"
+}
+
+
+
+.sub-title {
+    color: #F2C298;
+    font-size: 16px;
+    margin-bottom: 15vh;
+    font-family: "Trebuchet MS";
+    margin-top: 15px;
+}
+.pager {
+    color: #FFB370;
+    text-align: center;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#itemText {
+    color: #FFFFFF;
+    padding: 10px 0px;
+    font-size: 18px;
+    font-family: "Trebuchet MS";
+}
+#consciousText #itemText {
+    font-size: 20px;
+    padding: 4vh 0;
+}
+.buttons {
+    bottom: 10px;
+    position: absolute;
+    width: 100%;
+    bottom:6vh;
+}
+#btnNextCard,
+#btnChooseThisCard, #btnContinue {
+    height: 56px;
+    width: 211px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+}
+#btnNextCard.touching,
+#btnChooseThisCard.touching {
+    background-position: 0 -56px;
+}
+#btnNextCard {
+    background-image: url(images/bg/elem/btn-next-card.png);
+}
+#btnChooseThisCard {
+    background-image: url(images/bg/elem/btn-choose-this.png);
+}
+#btnContinue
+{
+    background-image: url(images/bg/elem/btn-continue.png);
+    margin-bottom: 40px;
+}
+
+ul#step5SubSteps li {
+    display: none;
+    list-style: none;
+    margin-bottom: 10px;
+}
+ul#step5SubSteps li#subStep1 {
+    display: block;
+}
+ul#step5SubSteps li.read > div{
+    display: none;
+}
+ul#step5SubSteps li > div {
+    
+}
+ul#step5SubSteps li.read > div.summary {
+    display: block;
+    color: rgba(0,0,0,0.5);
+}
+ul#step5SubSteps label {
+    display: block;
+    float: left;
+    font-weight: bold;
+    width: 60px;
+}
+ul#step5SubSteps p {
+    font-size: 14px;
+    margin-left: 60px;
+}
+ul#step5SubSteps {
+    font-size: 17px;
+    margin: 0;
+    padding: 0 5vw;
+    font-family: "Trebuchet MS";
+}
+#subStepInfo {
+    margin-bottom: 15px;
+    text-align: center;
+}
+ul#step5SubSteps .summary {
+    color: rgba(0,0,0,0.5);
+    margin-bottom: 12px;
+}
+#footer #btnShare.hide {
+    display: none;
+}
+.nextbtn {
+    background-image: url("images/btns/next-btns.png");
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    font-size: 22px;
+    font-weight: bold;
+    height: 75px;
+    margin: 10px auto;
+    padding-left: 55px;
+    text-align: left;
+    width: 254px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.rectangle{
+    display: block;
+    margin: 0 auto;
+    width: 7%;
+}
+.sales{
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-size: 25px;
+}
+#btnFreeOnlineClearing {
+    background-position: 0 0;
+}
+#btnClearingCDMP3 {
+    background-position: 0 -80px;
+}
+#btnDrRick {
+    background-position: 0 -160px;
+}
+#btnFreeOnlineClearing.touching {
+    background-position: 0 -242px;
+}
+#btnClearingCDMP3.touching{
+    background-position: 0 -322px;
+}
+#btnDrRick.touching {
+    background-position: 0 -402px;
+}
+.nextbtn > span {
+    display: block;
+    text-decoration: underline;
+    font-size: 13px;
+    padding-right: 20px;
+    font-weight: normal;
+}
+#pageNextSteps h1 {
+    color: #FEB58A;
+    font-size: 45px;
+    margin: 0;
+    text-align: center;
+    font-family: "KaushanScript-Regular";
+}
+#pageNextSteps h2 {
+    color: #FEB58A;
+    font-size: 26px;
+    margin: 10px 0 5px;
+    text-align: center;
+    text-transform: none;
+    font-family: "KaushanScript-Regular";
+    font-weight: normal;
+}
+#pageNextSteps h2 span {
+    color: #ffffff;
+}
+td.empty {
+    text-align: center;
+    padding-top: 30px;
+    font-size: 18px;
+}
+#imgCardWrap {
+    width: 100%;
+    position: absolute;
+    top: 30px;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -ios-border-radius: 15px;
+}
+#imgCard {
+    width: 100%;
+}
+#pageConsciousItem #content,#pageContinue #content {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#imgCardWrap > img {
+    position: absolute;
+    display: none;
+    top: 0px;
+}
+
+#pageItem #content {
+    top: 0px;
+}
+#pageFaq #content {
+    font-family: "Trebuchet MS";
+}
+@media screen and (max-width: 360px){
+    .bellow{
+        letter-spacing: -1px;
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "name": "com.essentialpathways.transformationcards",
+    "version": "1.0.0",
+    "displayName": "Oracle Cards",
+    "cordova": {
+        "platforms": [
+            "android",
+            "ios"
+        ],
+        "plugins": {
+            "cordova-plugin-file-transfer": {},
+            "cordova-plugin-inappbrowser": {},
+            "cordova-plugin-screen-orientation": {},
+            "cordova-plugin-splashscreen": {},
+            "cordova-plugin-whitelist": {},
+            "cordova-plugin-x-socialsharing": {},
+            "cordova-plugin-device": {},
+            "cordova-plugin-console": {},
+            "cordova-plugin-crosswalk-webview": {
+                "XWALK_VERSION": "23+",
+                "XWALK_LITEVERSION": "xwalk_core_library_canary:17+",
+                "XWALK_COMMANDLINE": "--disable-pull-to-refresh-effect",
+                "XWALK_MODE": "embedded",
+                "XWALK_MULTIPLEAPK": "true"
+            },
+            "cordova-plugin-statusbar": {}
+        }
+    },
+    "dependencies": {
+        "cordova-android": "^6.2.3",
+        "cordova-ios": "^4.4.0",
+        "cordova-plugin-console": "^1.0.7",
+        "cordova-plugin-crosswalk-webview": "^2.3.0",
+        "cordova-plugin-device": "~1.1.4",
+        "cordova-plugin-file-transfer": "~1.6.1",
+        "cordova-plugin-inappbrowser": "~1.5.0",
+        "cordova-plugin-screen-orientation": "~1.4.2",
+        "cordova-plugin-splashscreen": "~4.0.0",
+        "cordova-plugin-statusbar": "^2.2.3",
+        "cordova-plugin-whitelist": "1",
+        "cordova-plugin-x-socialsharing": "~5.1.8"
+    }
+}

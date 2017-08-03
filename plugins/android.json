@@ -1,0 +1,57 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "oracle.cards.com"
+        },
+        "cordova-plugin-crosswalk-webview": {
+            "XWALK_VERSION": "23+",
+            "XWALK_LITEVERSION": "xwalk_core_library_canary:17+",
+            "XWALK_COMMANDLINE": "--disable-pull-to-refresh-effect",
+            "XWALK_MODE": "embedded",
+            "XWALK_MULTIPLEAPK": "true",
+            "PACKAGE_NAME": "oracle.cards.com"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "oracle.cards.com"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "oracle.cards.com"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "oracle.cards.com"
+        },
+        "cordova-plugin-screen-orientation": {
+            "PACKAGE_NAME": "oracle.cards.com"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "oracle.cards.com"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "oracle.cards.com"
+        },
+        "cordova-plugin-x-socialsharing": {
+            "PACKAGE_NAME": "oracle.cards.com"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "oracle.cards.com"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "oracle.cards.com"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "oracle.cards.com"
+        },
+        "es6-promise-plugin": {
+            "PACKAGE_NAME": "oracle.cards.com"
+        }
+    }
+}
